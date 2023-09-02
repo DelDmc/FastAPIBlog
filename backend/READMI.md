@@ -40,6 +40,14 @@ FastAPICourse
 └── requirements.txt
 ```
 
+**main.py**  - Creates the FastAPI app instance, connects to database, and imports/includes routes and middleware.
+**apis/**    - Contains routers that handle different parts of the API like users, blogs etc. Imported into **main.py**.
+**db/**      - Database models and repository modules that encapsulate DB logic. Imported where needed.
+**schemas/** - Pydantic models for request and response validation. Used in route definitions.
+**core/**    - Modules with shared utilities like security, configuration etc. Imported where required.
+**tests/** - Test cases to validate routes and business logic. Conftest handles fixtures.
+**alembic/** - Database migration scripts to safely evolve DB schema.\
+**.env**- Environment variables loaded by FastAPI.
 
 ### Typical request flow in FastAPI:
 
