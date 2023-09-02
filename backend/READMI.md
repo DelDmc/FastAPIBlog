@@ -1,3 +1,44 @@
+### Project Files Structure
+
+FastAPICourse
+├── backend
+│   ├── alembic
+│   │   └── versions
+│   ├── apis
+│   │   └── v1
+│   │       ├── route_blog.py
+│   │       ├── route_login.py
+│   │       └── route_user.py
+│   ├── core
+│   │   ├── config.py
+│   │   ├── hashing.py
+│   │   └── security.py
+│   ├── db
+│   │   ├── models
+│   │   │   ├── blog.py
+│   │   │   └── user.py
+│   │   ├── repository
+│   │   │   ├── blog.py
+│   │   │   ├── login.py
+│   │   │   └── user.py
+│   │   ├── base.py
+│   │   └── session.py
+│   ├── schemas
+│   │   ├── blog.py
+│   │   └── user.py
+│   ├── tests
+│   │   ├── conftest.py
+│   │   └── test_routes
+│   │       └── test_user.py
+│   ├── .env
+│   ├── alembic.ini
+│   ├── main.py 
+│   └── README.md
+├── venv
+├── .gitignore
+└── requirements.txt
+
+
 ### Typical request flow in FastAPI:
 
 The request is received by FastAPI and directed to the appropriate router based on the path and method.
@@ -120,3 +161,7 @@ class Payment(BaseModel):
 
 Pydantic brings the benefits of type checking for validation and settings management in Python. 
 An essential tool for robust and maintainable applications.
+
+
+
+
