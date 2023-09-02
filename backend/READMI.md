@@ -1,5 +1,6 @@
 ### Project Files Structure
 
+```
 FastAPICourse
 ├── backend
 │   ├── alembic
@@ -37,6 +38,7 @@ FastAPICourse
 ├── venv
 ├── .gitignore
 └── requirements.txt
+```
 
 
 ### Typical request flow in FastAPI:
